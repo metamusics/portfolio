@@ -21,14 +21,48 @@ body{
     gap: 5vh;
     
 }
+a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10vh;
 
+}
+li a {
+    display: block;
+    width: 12vh;
+    height: 6vh;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    text-align: center;
+    line-height: 6vh;
+    
+    
+  }
+li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+  }
 .capitalD{
 background-color: var(--main-color);
 border-radius: 0 50% 50% 0;
 width: 20vh;
 height: 20vh;
+cursor: pointer;
+
 
 }
+.capitalD:hover {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
 .capitalE {
     display: flex;
     flex-direction: column;
@@ -36,6 +70,7 @@ height: 20vh;
     height: 20vh; 
     width: 20vh;   
     position: relative;
+    cursor: pointer;
 }
 .capitalE::before {
     content: ''; 
@@ -53,7 +88,10 @@ height: 20vh;
     height: 5vh;
     background-color: var(--main-color);
 }
-
+.capitalE:hover {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
 
 .capitalB{
 width: 20vh;
@@ -62,6 +100,8 @@ position: relative;
 border-radius: 0;
 clip-path: none;
 overflow: hidden;
+cursor: pointer;
+
 
 &::before, &::after {
     content: '';
@@ -82,6 +122,10 @@ overflow: hidden;
     border-radius: 0 50% 50% 0;
 }
 }
+.capitalB:hover {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
 
 .capitalR{
     position: relative;
@@ -99,13 +143,24 @@ width: 0;
 height: 0;
 border-bottom: 20vh solid var(--main-color);
 border-right: 20vh solid transparent;
+cursor: pointer;
 }
+.capitalR:hover {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
+
 .capitalU{
 border-radius: 0 0 50% 50%;
 width: 20vh;
 height: 20vh;
 background-color: var(--main-color);
+cursor: pointer;
 }
+.capitalU:hover {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
 .capitalP{
     position: relative;
     &::before {
@@ -121,4 +176,9 @@ background-color: var(--main-color);
 width: 5vh;
 height: 20vh;
 background-color: var(--main-color);
+cursor: pointer;
 }
+.capitalP:hover {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
